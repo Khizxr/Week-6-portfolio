@@ -1,4 +1,15 @@
-b1 = int(input("input a number"))
-binary = bin(b1)
+#!usr/bin/env python3
+def sui():
+    b1 = int(input("input a number"))
+    binary = bin(b1)
+    print(binary[2:])
+    quit()
+    return sui()
 
-print(binary[2:])
+def find_factors(n):
+    factorlist = []
+    for i in range(1,n+1):
+        if (n%i == 0):
+            factorlist.append(i)
+            print(factorlist)
+    return(factorlist)
