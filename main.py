@@ -22,3 +22,11 @@ def primenum(num):
                 break
         else:
             print(num, "is a prime number")
+def string():
+    x = input("Input what you want to encrypt")
+    no_space = x.replace("","")
+    backwards = no_space[::-1]
+    print(backwards)
+
+
+string()
